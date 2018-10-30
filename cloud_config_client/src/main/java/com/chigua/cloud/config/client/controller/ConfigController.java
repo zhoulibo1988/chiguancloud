@@ -1,6 +1,7 @@
 package com.chigua.cloud.config.client.controller;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -12,14 +13,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 * @author Mr.zhou 
 * @date 2018年10月27日 下午10:52:18
  */
+@RefreshScope
 @Controller
 @RequestMapping(value="/config")
 public class ConfigController {
-	@Value("${myname}")
-	String myname;
+	@Value("${mynames}")
+	String mynames;
 	@ResponseBody
-	@RequestMapping(value="/getmyname")
+	@RequestMapping(value="/getmynames")
 	public String getMyName() {
-		return myname;
+		return mynames;
 	}
 }
