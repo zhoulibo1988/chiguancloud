@@ -1,7 +1,8 @@
 # -- ChiGuaTeam 官网
-	
+	|--提供各类技术文档，官方博客，技术服务，承接开发项目等
 [ChiGuaTeam](https://www.chiguateam.com/)
 	
+		
 # -- chiguancloud工程说明
 	|------------------------------------------------------------------|
 	|---[chiguancloud]	父级
