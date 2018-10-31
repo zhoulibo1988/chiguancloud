@@ -1,6 +1,6 @@
 # -- ChiGuaTeam 官网
 	
-	|--[ChiGuaTeam](https://www.chiguateam.com/)
+[ChiGuaTeam](https://www.chiguateam.com/)
 	
 # -- chiguancloud工程说明
 	|------------------------------------------------------------------|
