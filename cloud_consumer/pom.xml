@@ -50,8 +50,7 @@
 		<dependency>
 			<groupId>com.chigua.cloud</groupId>
 			<artifactId>cloud_common</artifactId>
-			<version>${common.version}</version>
-		</dependency>
+			</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>

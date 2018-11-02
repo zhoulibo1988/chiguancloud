@@ -40,6 +40,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+        <!-- 依赖服务common -->
+		<dependency>
+			<groupId>com.chigua.cloud</groupId>
+			<artifactId>cloud_common</artifactId>
+		</dependency>
     </dependencies>
 
     <dependencyManagement>

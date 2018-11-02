@@ -55,6 +55,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		<!-- 集成公共服务类 -->
+		<dependency>
+			<groupId>com.chigua.cloud</groupId>
+			<artifactId>cloud_common</artifactId>
+		</dependency>
     </dependencies>
 
     <dependencyManagement>

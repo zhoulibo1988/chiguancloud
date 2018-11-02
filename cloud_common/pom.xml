@@ -32,6 +32,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- 集成spring boot admin -->
+		<dependency>
+		   <groupId>de.codecentric</groupId>
+		    <artifactId>spring-boot-admin-starter-client</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

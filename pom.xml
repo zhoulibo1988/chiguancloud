@@ -26,6 +26,7 @@
 		<spring-cloud.version>Finchley.SR2</spring-cloud.version>
 		<version>2.0.6.RELEASE</version>
 		<spring-boot-admin.version>2.0.4</spring-boot-admin.version>
+		<project.chigua>1.0</project.chigua>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -54,6 +55,7 @@
 			<dependency>
 				<groupId>com.chigua.cloud</groupId>
 				<artifactId>cloud_common</artifactId>
+				<version>${project.chigua}</version>
 			</dependency>
 			<dependency>
 			    <groupId>com.alibaba</groupId>
