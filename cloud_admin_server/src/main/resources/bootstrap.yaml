@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: spring-boot-admin
+  profiles:
+    active:
+      - secure
+server:
+  port: 9005
+ 
+# tag::configuration-eureka[]
+eureka:   #<1>
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    health-check-url-path: /actuator/health
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:9000}/eureka/
+ 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  #<2>
+  endpoint:
+    health:
+      show-details: ALWAYS
+# end::configuration-eureka[]
+ 
+---
+spring:
+  profiles: insecure
+  
+---
+spring:
+  profiles: secure
+  security:
+    user:
+      name: "zhoulibo"
+      password: "zhoulibo"
+eureka:
+  instance:
+    metadata-map:
+      user.name: "zhoulibo"         #These two are needed so that the server
+      user.password: "zhoulibo" #can access the protected client endpoints
