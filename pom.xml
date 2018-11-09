@@ -58,49 +58,55 @@
 				<version>${project.chigua}</version>
 			</dependency>
 			<dependency>
-			    <groupId>com.alibaba</groupId>
-			    <artifactId>fastjson</artifactId>
-			    <version>1.2.47</version>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.2.47</version>
 			</dependency>
 			<!-- spring-boot-admin 服务监控依赖 -->
 			<dependency>
-			   <groupId>de.codecentric</groupId>
-			   <artifactId>spring-boot-admin-starter-client</artifactId>
-			  <version>${spring-boot-admin.version}</version>
+				<groupId>de.codecentric</groupId>
+				<artifactId>spring-boot-admin-starter-client</artifactId>
+				<version>${spring-boot-admin.version}</version>
 			</dependency>
 			<!-- spring cloud zipkin 服务跟踪依赖 -->
 			<dependency>
-			    <groupId>io.zipkin.java</groupId>
-			    <artifactId>zipkin-server</artifactId>
-			    <version>0.4.3</version>
+				<groupId>io.zipkin.java</groupId>
+				<artifactId>zipkin-server</artifactId>
+				<version>0.4.3</version>
 			</dependency>
 			<dependency>
-	            <groupId>io.zipkin.java</groupId>
-	            <artifactId>zipkin-autoconfigure-ui</artifactId>
-	            <version>1.0.0</version>
-	        </dependency>
-	        <dependency>
-			    <groupId>org.springframework.cloud</groupId>
-			    <artifactId>spring-cloud-starter-zipkin</artifactId>
-			    <version>2.0.1.RELEASE</version>
+				<groupId>io.zipkin.java</groupId>
+				<artifactId>zipkin-autoconfigure-ui</artifactId>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
-			    <groupId>io.zipkin.java</groupId>
-			    <artifactId>zipkin-autoconfigure-storage-mysql</artifactId>
-			    <version>2.11.5</version>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-zipkin</artifactId>
+				<version>2.0.1.RELEASE</version>
 			</dependency>
-	        <!-- end -->
-	        <dependency>
-	            <groupId>org.springframework.cloud</groupId>
-	            <artifactId>spring-cloud-starter-config</artifactId>
-	            <version>2.0.0.RELEASE</version>
-	        </dependency>
-	        <!--  Spring cloud config bus -->
-        <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-			 <version>2.0.0.RELEASE</version>
-		</dependency>
+			<dependency>
+				<groupId>io.zipkin.java</groupId>
+				<artifactId>zipkin-autoconfigure-storage-mysql</artifactId>
+				<version>2.11.5</version>
+			</dependency>
+			<!-- end -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-config</artifactId>
+				<version>2.0.0.RELEASE</version>
+			</dependency>
+			<!-- Spring cloud config bus -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+				<version>2.0.0.RELEASE</version>
+			</dependency>
+			<!-- 熔断器 -->
+			 <dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+				<version>2.0.2.RELEASE</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<modules>

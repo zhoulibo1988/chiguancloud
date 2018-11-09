@@ -65,16 +65,18 @@
 # --	采坑注意事项
 	|------------------------------------------------------------------|
 	|	*1：在配置中心搭建时，我们集成了Spring cloud bus 此服务，此服务我使用git
-			与rabbit来配合合作时，当我们改变配置文件时候，需要主动的访问url:
-			http://localhost:9004/actuator/bus-refresh，客户端才能生效改动的文件，
-			这样是不可取的；具体可以参考此文章https://blog.csdn.net/yanpenglei/article/details/78891620，
-			会有所帮助
+	|		与rabbit来配合合作时，当我们改变配置文件时候，需要主动的访问url:
+	|		http://localhost:9004/actuator/bus-refresh，客户端才能生效改动的文件，
+	|		这样是不可取的；具体可以参考此文章https://blog.csdn.net/yanpenglei/article/details/78891620，
+	|		会有所帮助
 	|
 	|
 	|
 	|
-	| 	
-	
+	| ----------------------------------------------------------------|	
+
+# --	进度图
+	![Image text](https://raw.githubusercontent.com/zhoulibo1988/config-repo/master/config/chiguacloud.png)
 	
 	
 	
