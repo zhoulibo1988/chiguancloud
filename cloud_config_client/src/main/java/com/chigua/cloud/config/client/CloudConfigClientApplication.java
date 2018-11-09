@@ -1,5 +1,7 @@
 package com.chigua.cloud.config.client;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -17,8 +19,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableDiscoveryClient
 @EnableFeignClients
 public class CloudConfigClientApplication {
-
+	private static final Logger LOGGER = LoggerFactory.getLogger(CloudConfigClientApplication.class);
     public static void main(String[] args) {
+    	LOGGER.info("-----------------》》Spring cloud config 配置客户端启动");
         SpringApplication.run(CloudConfigClientApplication.class, args);
     }
 }

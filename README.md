@@ -26,7 +26,7 @@
 	|--cloud_provider：服务提供者，这里主要给消费者提供消费服务，集成Feign
 	|--cloud_common：提供了统一返回JSON数据格式
 	|--cloud_admin_server：Spring Boot Admin用于管理和监控Spring Boot程序，Spring Boot Admin 作为 Server 端，其他的要被监控的应用作为 Client 端
-	|					
+	|--cloud_zipkin_server:主要提供各个服务之间调用的关系；					
 	|------------------------------------------------------------------|
 	
 # -- 所用技术组件
@@ -40,6 +40,7 @@
 	|--Spring cloud feign
 	|--Spring cloud Hystrix
 	|--Spring boot admin
+	|--Spring cloud zipkin
 	|------------------------------------------------------------------|
 
 # --	 Spring cloud	 组件版本
