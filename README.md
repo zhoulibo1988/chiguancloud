@@ -76,7 +76,7 @@
 	| ----------------------------------------------------------------|	
 
 # --	进度图
-	![Image text](https://raw.githubusercontent.com/zhoulibo1988/config-repo/master/config/chiguacloud.png)
+![Image text](https://raw.githubusercontent.com/zhoulibo1988/config-repo/master/config/chiguacloud.png)
 	
 	
 	
